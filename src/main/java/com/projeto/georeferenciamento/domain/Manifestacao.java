@@ -29,11 +29,17 @@ public class Manifestacao {
     @Enumerated(EnumType.STRING)
     private Setor setor;
 
-    public Long getId_info() {
-        return id_info;
-    }
+    public Manifestacao(DadosCadastroManifestacao dados) {
 
-    public void setId_info(Long id_info) {
-        this.id_info = id_info;
+        this.nome_cent = dados.nome_cent();
+        this.participante = dados.participante();
+        this.entidade = dados.entidade();
+        this.contexto = dados.contexto();
+        this.assunto = dados.assunto();
+        this.observacao = dados.observacao();
+        this.data_info = dados.data_info();
+        this.tipo = dados.tipo();
+        this.eixo = dados.eixo();
+        this.setor = dados.setor();
     }
 }
