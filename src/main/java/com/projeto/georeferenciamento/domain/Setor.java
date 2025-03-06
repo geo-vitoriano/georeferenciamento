@@ -1,11 +1,12 @@
 package com.projeto.georeferenciamento.domain;
 
-public enum Tipo {
-    NAOAPLICA("Não se aplica");
+public enum Setor {
+    NAOIDENTIFICADO("Não identifcado");
 
     private String descricao;
-    Tipo(String descricao) {
 
+    Setor(String descricao) {
         this.descricao = descricao;
+
     }
 }
